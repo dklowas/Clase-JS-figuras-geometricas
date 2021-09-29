@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calcula tu Figura geometrica</h1>
+    </header>
+    <main>
+      <!seccion de cuadrado>
+      <section class="form-div-section">
+        <div class="form-div">
+          <form action="">
+            <label for="input-cuadrado-user">
+              <!se coloca el for con el mismo ID del input para que al momento que se seleciona el texto tambien se seleccione en input>
+              ¿Cual es el lado de tu cuadrado?
+            </label>
+            <input id="input-cuadrado-user" type="number" />
+            <div class="buttons-div-main">
+              <button
+                class="button-perimetro"
+                type="button"
+                onclick="calcularPerimetroFunc ()"
+              >
+                Calcula el Perimetro
+              </button>
+              <button
+                class="button-area"
+                type="button"
+                onclick="calcularAreaFunc ()"
+              >
+                calcula el Area
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <! termino de seccion de cuadrado>
+      <!inicio seccion de cuadrado>
+      <section>
+        <div>
+          <form action="">
+            <!input de lados>
+            <div>
+              <label for="ladosdetriangulo">
+                ¿Cuanto miden los lados de tu triangulo?
+              </label>
+              <input id="ladosdetriangulo" type="number" />
+            </div>
+            <!input de base>
+            <div>
+              <label for="basetriangulo">
+                ¿Cuanto mide la base de tu triangulo?
+              </label>
+              <input id="basetriangulo" type="number" />
+            </div>
+
+            <!input de ATH>
+            <div>
+              <label for="alturatriangulo">
+                ¿Cuanto mide la altura de tu triangulo?
+              </label>
+              <input id="alturatriangulo" type="number" />
+            </div>
+            <!Buttons>
+            <div>
+              <button type="button" onclick="calcularPerimetroFunctriangulo ()">
+                Calcula el perimetro de tu triangulo
+              </button>
+              <button type="button" onclick="calcularAreaFunctriangulo ()">
+                calcula el area de tu triangulo
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./figures.js"></script>
+  </body>
+</html>
